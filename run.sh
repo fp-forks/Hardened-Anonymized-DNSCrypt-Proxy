@@ -52,6 +52,8 @@ echo -e "--------------------------------------------------------------"
 echo -e "| Applying Hardened-Anonymized-DNSCrypt-Proxy Configurations |"
 echo -e "--------------------------------------------------------------"
 rm -rf /etc/$pkgname&&mkdir /etc/$pkgname
+touch /etc/dnscrypt-proxy/captive-portals.txt
+touch /etc/dnscrypt-proxy/{cloaking,forwarding}-rules.txt
 touch /etc/dnscrypt-proxy/{allowed,blocked}-{ips,names}.txt
 cp -rf $pkgname.toml /etc/$pkgname
 echo -e "-------------------------------------------"

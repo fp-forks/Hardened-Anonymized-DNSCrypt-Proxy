@@ -58,7 +58,6 @@ But For Linux, People Find It Hard To Configure DNSCrypt-Proxy Manually. But I W
     cd "$(basename "$_" .git)"
     makepkg -Ccrfs --noconfirm
     sudo pacman -U *zst
-    ### Filters (optional)
 
 ## Deconfigure [Copy-Paste]
 

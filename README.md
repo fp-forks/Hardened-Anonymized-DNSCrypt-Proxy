@@ -52,13 +52,17 @@ But For Linux, People Find It Hard To Configure DNSCrypt-Proxy Manually. But I W
 - `direct_cert_fallback` = `false` (prevent direct connections through the resolvers for failed certificate retrieved via relay)
 
 
-## Configure/Deconfigure [Copy-Paste]
+## Configure [Copy-Paste]
 
     git clone https://github.com/BL4CKH47H4CK3R/Hardened-Anonymized-DNSCrypt-Proxy
     cd "$(basename "$_" .git)"
-    chmod +x dnscrypt-proxy.sh && sudo ./dnscrypt-proxy.sh
+    makepkg -Ccrfs --noconfirm
+    sudo pacman -U *zst
     ### Filters (optional)
 
+## Deconfigure [Copy-Paste]
+
+    sudo pacman -Rcnsu Hardened-Anonymized-DNSCrypt-Proxy
 
 ## Filters [Optional]
 

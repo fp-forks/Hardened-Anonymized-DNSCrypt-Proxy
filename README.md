@@ -56,7 +56,7 @@ But For Linux, People Find It Hard To Configure DNSCrypt-Proxy Manually. But I W
 
     git clone https://github.com/BL4CKH47H4CK3R/Hardened-Anonymized-DNSCrypt-Proxy
     cd "$(basename "$_" .git)"
-    chmod +x run.sh && sudo ./run.sh
+    chmod +x dnscrypt-proxy.sh && sudo ./dnscrypt-proxy.sh
     ### Filters (optional)
 
 

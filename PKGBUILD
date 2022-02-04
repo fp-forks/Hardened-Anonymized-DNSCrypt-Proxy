@@ -1,6 +1,6 @@
 # Maintainer: BL4CKH47H4CK3R <bl4ckh47h4ck3r@archlinux.org>
 
-pkgname=hardened-anonymized-dnscrypt-proxy
+pkgname=Hardened-Anonymized-DNSCrypt-Proxy
 _pkgname=dnscrypt-proxy
 pkgver=2.1.1
 pkgrel=1

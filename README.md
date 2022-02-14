@@ -1,4 +1,4 @@
-<h1 align=center>Hardened-Anonymized-DNSCrypt-Proxy</h1>
+<h1 align=center>[Hardened-Anonymized-DNSCrypt-Proxy](https://github.com/BL4CKH47H4CK3R/Hardened-Anonymized-DNSCrypt-Proxy)</h1>
 <p align=center>Wipe Snoopers Out Of Your Networks</p>
 
 A flexible DNS proxy, with support for modern encrypted DNS protocols such as [DNSCrypt v2](https://dnscrypt.info/protocol), [DNS-over-HTTPS](https://www.rfc-editor.org/rfc/rfc8484.txt) and [Anonymized DNSCrypt](https://github.com/DNSCrypt/dnscrypt-protocol/blob/master/ANONYMIZED-DNSCRYPT.txt).
@@ -12,7 +12,7 @@ A flexible DNS proxy, with support for modern encrypted DNS protocols such as [D
 
 ## Why This Project ?
 
-There Are Automated DNSCrypt-Proxy Client For Both [Windows](https://github.com/bitbeans/SimpleDnsCrypt) & [Android (Magisk Module)](https://codeberg.org/quindecim/dnscrypt-proxy-android) <br/>
+There Are Automated DNSCrypt-Proxy Client For Both [Windows](https://github.com/bitbeans/SimpleDnsCrypt) & [Android (Magisk Module)](https//github.com/quindecim/dnscrypt-proxy-android) <br/>
 But For Linux, People Find It Hard To Configure DNSCrypt-Proxy Manually. But I Wanted To Keep It Simple, So It's Here !
 
 

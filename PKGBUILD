@@ -14,11 +14,11 @@ install=$_pkgname.install
 source=(
   git+https://github.com/dnscrypt/$_pkgname#tag=$pkgver?signed
   $_pkgname.toml
-  $_pkgname.service
+  $_pkgname.socket
 )
 sha512sums=('SKIP'
-            '957298bf290d04d1ed137eb648f48fcf52828ee9d1db5274546d1ceb181f3960913249ac4e57378ab73a5edb16f8942b3336f508cbd70b7318836d112edf1583'
-            '5589eddf9d5fda86778ebc91c9e20d8acfdcf86bc1f1a5d34279f33c402f32dc73539c0c0ba6bd74b80617e9abcc49c8c68cc06f171f74c66f2ffc92dfeecd75')
+            'b17704410ddbc7ad1cc069097bdbdaeae9bddb6c05d18379bf5da41a9dc1f21c1bc1b720272547f472610efaa2a2614adbc82e6a32c2eb8a6c2bdbacee7e16e3'
+            '4c331acc8eef75390fa6defc18870a593cf86dd8ae8a29a3f1ad032a6f7c2ae0b5b066a6533e812d545493cb2e6411f2e1a216ea9772180b54b420e60ac08652')
 validpgpkeys=('54A2B8892CC3D6A597B92B6C210627AABA709FE1') # Frank Denis (Jedi/Sector One) <pgp@pureftpd.org
 
 build() {
@@ -34,8 +34,8 @@ build() {
 package() {
   cd "$srcdir/$_pkgname/$_pkgname"
   install -Dm755 "dnscrypt-proxy" "$pkgdir/usr/bin/dnscrypt-proxy"
-  install -Dm644 "../../dnscrypt-proxy.toml" "$pkgdir/etc/dnscrypt-proxy/dnscrypt-proxy.toml"
-  install -Dm644 "../../dnscrypt-proxy.service" "$pkgdir/usr/lib/systemd/system/dnscrypt-proxy.service"
   install -Dm644 "../LICENSE" "$pkgdir/usr/share/licenses/$_pkgname/LICENSE"
+  install -Dm644 "../../dnscrypt-proxy.toml" "$pkgdir/etc/dnscrypt-proxy/dnscrypt-proxy.toml"
+  install -Dm644 "../../dnscrypt-proxy.socket" "$pkgdir/usr/lib/systemd/system/dnscrypt-proxy.socket"
 }
 # vim:set ts=2 sw=2 et:

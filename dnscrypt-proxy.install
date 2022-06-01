@@ -29,7 +29,6 @@ post_install() {
 	echo -e "-------------------------------------------"
 	echo -e "| Configuring & Restarting NetworkManager |"
 	echo -e "-------------------------------------------"
-	systemctl daemon-reload && systemctl disable --now NetworkManager-{dispatcher,wait-online} -f
 	systemctl daemon-reload && systemctl restart --now NetworkManager -f
 	echo -e "------------------------------------------------------"
 	echo -e "| Enforcing Hardened-Anonymized-DNSCrypt-Proxy Rules |"
@@ -69,7 +68,6 @@ post_remove() {
 	echo -e "ethernet.cloned-mac-address=random" >>/etc/NetworkManager/NetworkManager.conf
 	echo -e "wifi.cloned-mac-address=random" >>/etc/NetworkManager/NetworkManager.conf
 	echo -e "[connectivity]\n.set.enabled=false" >>/var/lib/NetworkManager/NetworkManager-intern.conf
-	systemctl daemon-reload && systemctl disable --now NetworkManager-{dispatcher,wait-online} -f
 	systemctl daemon-reload && systemctl restart --now NetworkManager -f
 	echo -e "--------------------------------------"
 	echo -e "| Hardened-Anonymized-DNSCrypt-Proxy |"

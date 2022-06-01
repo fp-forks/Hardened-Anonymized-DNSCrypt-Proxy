@@ -3,7 +3,7 @@
 pkgname=Hardened-Anonymized-DNSCrypt-Proxy
 _pkgname=dnscrypt-proxy
 pkgver=2.1.1
-pkgrel=1
+pkgrel=10
 pkgdesc="Wipe Snoopers Out Of Your Networks"
 arch=(any)
 url="https://github.com/BL4CKH47H4CK3R/Hardened-Anonymized-DNSCrypt-Proxy"
@@ -15,6 +15,7 @@ source=(
   git+https://github.com/dnscrypt/$_pkgname#tag=$pkgver?signed
   $_pkgname.toml
   $_pkgname.socket
+  $_pkgname.service
 )
 sha512sums=('SKIP'
             'b17704410ddbc7ad1cc069097bdbdaeae9bddb6c05d18379bf5da41a9dc1f21c1bc1b720272547f472610efaa2a2614adbc82e6a32c2eb8a6c2bdbacee7e16e3'
@@ -37,5 +38,6 @@ package() {
   install -Dm644 "../LICENSE" "$pkgdir/usr/share/licenses/$_pkgname/LICENSE"
   install -Dm644 "../../dnscrypt-proxy.toml" "$pkgdir/etc/dnscrypt-proxy/dnscrypt-proxy.toml"
   install -Dm644 "../../dnscrypt-proxy.socket" "$pkgdir/usr/lib/systemd/system/dnscrypt-proxy.socket"
+  install -Dm644 "../../dnscrypt-proxy.service" "$pkgdir/usr/lib/systemd/system/dnscrypt-proxy.service"
 }
 # vim:set ts=2 sw=2 et:

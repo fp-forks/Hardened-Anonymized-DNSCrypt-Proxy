@@ -51,7 +51,7 @@ post_remove() {
 	echo -e "------------------------------------------------"
 	echo -e "| Disabling Hardened-Anonymized-DNSCrypt-Proxy |"
 	echo -e "------------------------------------------------"
-	# systemctl daemon-reload && systemctl disable --now dnscrypt-proxy.socket -f
+	systemctl daemon-reload && systemctl disable --now dnscrypt-proxy.socket -f
 	echo -e "---------------------------------------------------------------"
 	echo -e "| Reverting Hardened-Anonymized-DNSCrypt-Proxy Configurations |"
 	echo -e "---------------------------------------------------------------"

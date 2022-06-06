@@ -23,7 +23,7 @@ But For Linux, People Find It Hard To Configure DNSCrypt-Proxy Manually. But I W
 
 ## Differences From The Main DNSCrypt-Proxy Project
 
-- `server_names` = `acsacsar-ams-ipv4` [NLD], `altername` [RUS], `ams-dnscrypt-nl` [NLD], `bcn-dnscrypt` [ESP], `d0wn-tz-ns1` [TZA], `dct-de1` [DEU], `dct-ru1` [RUS], `dns.watch` [DEU], `dnscrypt.be` [BEL], `dnscrypt.ca-1` [CAN], `dnscrypt.ca-2` [CAN], `dnscrypt.eu-nl` [NLD], `dnscrypt.pl` [POL], `dnscrypt.uk-ipv4` [GBR], `dnswarden-asia-uncensor-dcv4` [SGP], `dnswarden-eu-uncensor-dcv4` [DEU], `dnswarden-us-uncensor-dcv4` [USA], `meganerd` [NLD], `moulticast-de-ipv4` [DEU], `moulticast-fr-ipv4` [FRA], `moulticast-sg-ipv4` [SGP], `moulticast-uk-ipv4` [GBR], `plan9-dns` [USA], `plan9-ns2` [USA], `pryv8boi` [DEU], `pwoss.org-dnscrypt` [DEU], `resolver4.dns.openinternet.io` [USA], `scaleway-ams` [NLD], `scaleway-fr` [FRA], `serbica` [NLD], `techsaviours.org-dnscrypt` [DEU], `v.dnscrypt.uk-ipv4` [GBR] are the resolvers in use.
+- `server_names` = `acsacsar-ams-ipv4` [NLD], `altername` [RUS], `ams-dnscrypt-nl` [NLD], `bcn-dnscrypt` [ESP], `d0wn-tz-ns1` [TZA], `dct-de1` [DEU], `dct-ru1` [RUS], `dns.watch` [DEU], `dnscrypt.be` [BEL], `dnscrypt.ca-1` [CAN], `dnscrypt.ca-2` [CAN], `dnscrypt.eu-nl` [NLD], `dnscrypt.pl` [POL], `dnscrypt.uk-ipv4` [GBR], `dnswarden-asia-uncensor-dcv4` [SGP], `dnswarden-eu-uncensor-dcv4` [DEU], `dnswarden-us-uncensor-dcv4` [USA], `meganerd` [NLD], `moulticast-de-ipv4` [DEU], `moulticast-fr-ipv4` [FRA], `moulticast-sg-ipv4` [SGP], `moulticast-uk-ipv4` [GBR], `plan9-ns2` [USA], `pryv8boi` [DEU], `pwoss.org-dnscrypt` [DEU], `resolver4.dns.openinternet.io` [USA], `scaleway-ams` [NLD], `scaleway-fr` [FRA], `serbica` [NLD], `techsaviours.org-dnscrypt` [DEU], `v.dnscrypt.uk-ipv4` [GBR] are the resolvers in use.
 
 - `doh_servers = false` (disable servers implementing the `DNS-over-HTTPS` protocol)
 
@@ -39,9 +39,9 @@ But For Linux, People Find It Hard To Configure DNSCrypt-Proxy Manually. But I W
 
 - `dnscrypt_ephemeral_keys = true` (create a new, unique key for every single DNS query)
 
-- `bootstrap_resolvers = ['91.239.100.100:53', '89.233.43.71:53']` (use [UncensoredDNS (Anycast & Unicast)](https://blog.uncensoreddns.org/) instead [CloudFlare](https://archive.fo/tS1Ln))
+- `bootstrap_resolvers = ['91.239.100.100:53', '89.233.43.71:53']` (use [UncensoredDNS (Anycast & Unicast)](https://blog.uncensoreddns.org/) instead [CloudFlare](https://archive.today/tS1Ln))
 
-- `netprobe_address = '91.239.100.100:53'` (use [UncensoredDNS (Anycast)](https://blog.uncensoreddns.org/) instead [CloudFlare](https://archive.fo/tS1Ln))
+- `netprobe_address = '91.239.100.100:53'` (use [UncensoredDNS (Anycast)](https://blog.uncensoreddns.org/) instead [CloudFlare](https://archive.today/tS1Ln))
 
 - `block_ipv6 = true` (immediately respond to IPv6-related queries with an empty response)
 
